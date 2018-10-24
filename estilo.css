@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	background-color: #ccc;
+}
+
+.menuItens{
+	margin-top: 10px;
+}
+
+.menuItens ul li{
+	cursor: pointer;
+	border-bottom: 1px solid #333;
+}
+
+.menuItens ul li:hover{
+	background-color: red;
+}
+
+.conteudo{
+
+}
