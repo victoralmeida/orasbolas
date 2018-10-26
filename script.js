@@ -21,11 +21,94 @@ var vetorAceleracaoBolaX = [];
 var vetorAceleracaoBolaY = [];
 var i = 0;
 
-//Esta função serve para reiniciar a página
-function recarrega() {
-    location.reload()
+
+function foco1(){
+	var g=document.getElementById("grafico1");
+	var g2=document.getElementById("grafico2");
+	var g3=document.getElementById("grafico3");
+	var g4=document.getElementById("grafico4");
+	var g5=document.getElementById("grafico5");
+
+	
+	g.style.background = "#6b5b95";
+
+	g2.style.background = "";
+	g3.style.background = "";
+	g4.style.background = "";
+	g5.style.background = "";
+	
+	
+
+}
+function foco2(){
+	var g=document.getElementById("grafico1");
+	var g2=document.getElementById("grafico2");
+	var g3=document.getElementById("grafico3");
+	var g4=document.getElementById("grafico4");
+	var g5=document.getElementById("grafico5");
+
+	
+	g2.style.background = "#6b5b95";
+
+	g.style.background = "";
+	g3.style.background = "";
+	g4.style.background = "";
+	g5.style.background = "";
+	
+}
+function foco3(){
+	var g=document.getElementById("grafico1");
+	var g2=document.getElementById("grafico2");
+	var g3=document.getElementById("grafico3");
+	var g4=document.getElementById("grafico4");
+	var g5=document.getElementById("grafico5");
+
+	
+	g3.style.background = "#6b5b95";
+
+	g2.style.background = "";
+	g.style.background = "";
+	g4.style.background = "";
+	g5.style.background = "";
+	
+}
+function foco4(){
+	var g=document.getElementById("grafico1");
+	var g2=document.getElementById("grafico2");
+	var g3=document.getElementById("grafico3");
+	var g4=document.getElementById("grafico4");
+	var g5=document.getElementById("grafico5");
+
+	
+	g4.style.background = "#6b5b95";
+
+	g2.style.background = "";
+	g3.style.background = "";
+	g.style.background = "";
+	g5.style.background = "";
+	
+}
+function foco5(){
+	var g=document.getElementById("grafico1");
+	var g2=document.getElementById("grafico2");
+	var g3=document.getElementById("grafico3");
+	var g4=document.getElementById("grafico4");
+	var g5=document.getElementById("grafico5");
+
+	
+	g5.style.background = "#6b5b95";
+
+	g2.style.background = "";
+	g3.style.background = "";
+	g4.style.background = "";
+	g.style.background = "";
+	
 }
 
+function exibeMenu(){
+	var menu = document.getElementById("menuId");
+	menu.style.display = "block";
+}
     /*Função para calcular a distância por meio de distância Euclidiana, recebe os valores iniciais de X e Y do robô.
    recebe essas coordenadas e calcula a partir do ponto inicial da bola, que é X = 1 e Y = 0.5 */
 function calculaDistancia(){
@@ -93,6 +176,8 @@ realizados até o momento em que a distância entre bola e robô for menor que o
 
 //A função abaixo gera o gráfico da trajetória da bola e robô até o momento de interceptação
 function geraGrafico1(){
+
+
     var linha1 = {
         x: vetorRoboX,
         y: vetorRoboY,
@@ -118,7 +203,7 @@ function geraGrafico1(){
     var data = [linha2, linha1];
 	
     var layout = {
-        title:'Gráfico 1: Trajetórias da bola e robô até a interceptação',
+        title:'Trajetórias da bola e do robô até a interceptação',
 		width: 730,
         height: 730,
 		xaxis: {
@@ -181,7 +266,7 @@ function geraGrafico2(){
     var data = [linha1, linha2, linha3, linha4];
 
     var layout = {
-        title:'Gráfico 2: Trajetórias da bola e robô até a interceptação com X(t) e Y(t)',
+        title:'Trajetórias da bola e do robô até a interceptação com X(t) e Y(t)',
         width: 730,
         height: 730,
 		xaxis: {
